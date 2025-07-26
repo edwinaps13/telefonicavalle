@@ -100,6 +100,19 @@
 
       const mapaURL = `https://www.google.com/maps?q=${sitio.LATITUD},${sitio.LONGITUD}`;
       const resultado = document.getElementById("resultado");
+<<<<<<< HEAD
+        resultado.innerHTML = `
+        <h3>${sitio.SITIO}</h3>
+        <p><strong>Dirección:</strong> ${sitio.DIRECCION}</p>
+        <p><strong>NIC:</strong> ${sitio.NIC}</p>
+        <p><strong>Identificador:</strong> ${sitio.IDENTIFICADOR || 'N/A'}</p>
+        <p><strong>Propietario EEL:</strong> ${sitio["PROPIETARIO EEL"] || 'N/A'}</p>
+        <p><strong>Código Propietario EEL:</strong> ${sitio["CODIGO PROPIETARIO EEL"] || 'N/A'}</p>
+        <p><strong>Coordenadas:</strong> ${sitio.LATITUD}, ${sitio.LONGITUD}</p>
+        <p><a href="${mapaURL}" target="_blank">📍 Ver en Google Maps</a></p>
+        `;
+
+=======
       resultado.innerHTML = `
         <h3>${sitio.SITIO}</h3>
         <p><strong>Dirección:</strong> ${sitio.DIRECCION}</p>
@@ -107,6 +120,7 @@
         <p><strong>Coordenadas:</strong> ${sitio.LATITUD}, ${sitio.LONGITUD}</p>
         <p><a href="${mapaURL}" target="_blank">📍 Ver en Google Maps</a></p>
       `;
+>>>>>>> 60715d7353d9fcf48408bb04bf02ac910ae58d2f
     }
   </script>
 
